@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Footer(props) {
     return (
         <React.Fragment>
-            <FooterText>Thank you for visiting my Introduce Page this page is made of React ﹠ Express.</FooterText>
+            <FooterText>Thank you for visiting my Introduce Page the page is made of React ﹠ Node</FooterText>
         </React.Fragment>
     )
 }

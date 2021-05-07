@@ -49,14 +49,16 @@ function Contact() {
 
     return (
         <ContactComponent>
-            <h1>📧 Email To BlockMonkey 📧</h1>
+            
             <div>
+            <h1>📧 Email To BlockMonkey 📧</h1>
                 <EmailContainer 
                 onSubmit={submitMailHandler}
                 action="http://localhost:5000/mail"
                 method="POST"
                 className={classes.root} 
                 noValidate autoComplete="off">
+                    
                     <TextField 
                         value={Customer}
                         onChange={handleCustomer}
@@ -82,7 +84,7 @@ function Contact() {
                     </Button>    
                     
                 </EmailContainer>
-            </div>
+                </div>
             <KakaoContainer>
                 <h1>📱 KaKao Open Chat 📱</h1>
                 <QrImg src="http://localhost:5000/static/kakao.png" alt="QR CODE" />
@@ -97,10 +99,10 @@ export default Contact;
 
 const ContactComponent = styled.div`
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    margin-bottom: 25px;
+    margin-top: 60px;
 `;
 
 const EmailContainer = styled.form`
@@ -115,7 +117,6 @@ const KakaoContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
 `;
 
 const KakaoAccess = styled.a`

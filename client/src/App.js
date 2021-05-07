@@ -12,6 +12,7 @@ import Header from "./components/header_footer/Header";
 import Footer from "./components/header_footer/Footer";
 import Projects from "./components/projectsPage/Projects";
 import Contact from "./components/contactPage/Contact";
+import './App.css';
 
 class App extends React.Component{
     constructor(props){

@@ -1,25 +1,32 @@
 import React from 'react';
 import styled from "styled-components";
 import Card from "./sections/Card";
+import { Row, Col } from "antd";
 
 function Projects(props) {
     return (
         
         <ProjectComponent>
-            <SubTitle>Projects MySelf 👊🏼</SubTitle>
-            <CardsComponent>
-                <Card title="개인 프로젝트0" description="프로젝트 디스크립션..." />
-                <Card title="개인 프로젝트1" description="프로젝트 디스크립션..." />
-                <Card title="개인 프로젝트2" description="프로젝트 디스크립션..." />
-                <Card title="개인 프로젝트3" description="프로젝트 디스크립션..." />
-            </CardsComponent>
-            <SubTitle>Projects with Team 🤝</SubTitle>
-            <CardsComponent>
-                <Card title="팀 프로젝트0" description="프로젝트 디스크립션..." />
-                <Card title="팀 프로젝트1" description="프로젝트 디스크립션..." />
-                <Card title="팀 프로젝트2" description="프로젝트 디스크립션..." />
-                <Card title="팀 프로젝트3" description="프로젝트 디스크립션..." />
-            </CardsComponent>
+            <SubTitle>Projects</SubTitle>
+            <div style={{
+                display:'flex',
+                justifyContent:'center'
+            }}>
+                <Row gutter={[24, 24]}>
+                    <Col xl={6} lg={8} md={12} sm={24}>
+                        <Card />
+                    </Col>
+                    <Col xl={6} lg={8} md={12} sm={24}>
+                        <Card />
+                    </Col>
+                    <Col xl={6} lg={8} md={12} sm={24}>
+                        <Card />
+                    </Col>
+                    <Col xl={6} lg={8} md={12} sm={24}>
+                        <Card />
+                    </Col>
+                </Row>
+            </div>
         </ProjectComponent>
     )
 }
@@ -35,11 +42,4 @@ const SubTitle = styled.h2`
     font-size: 25px;
     font-weight: 600;
     font-style: italic;
-`;
-
-const CardsComponent = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 15px 0;
 `;

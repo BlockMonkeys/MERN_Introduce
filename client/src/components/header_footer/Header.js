@@ -13,16 +13,12 @@ function Header(props) {
             <LogoBox onClick={()=> history.push("/")}>
                 <img src={`http://localhost:5000/static/blockmonkey.jpeg`} 
                 alt={`Logo Image`} 
-                style={{width: "35px", height: "35px"}}/>
+                style={{width: "50px", height: "50px", border: "1px solid lightgray", borderRadius:"25px"}}/>
             </LogoBox>
-            <div>
-                <HeaderTitle>Welcome To BlockMonkey's Website 👋🏼</HeaderTitle>
-            </div>
-            
-            <div>
-                <Menu />
-            </div>
 
+            <HeaderTitle>Welcome To BlockMonkey's Website 👋🏼</HeaderTitle>
+
+            <Menu />
         </HeaderComponent>
     )
 }
@@ -31,16 +27,10 @@ function Header(props) {
 export default Header;
 
 const HeaderComponent = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
     margin: 0 15px;
-`;
-
-const HeaderTitle = styled.div`
-    font-size: 30px;
-    font-weight: 800;
 `;
 
 const LogoBox = styled.div`
@@ -48,4 +38,17 @@ const LogoBox = styled.div`
         cursor: pointer;
     }
 `;
+
+const HeaderTitle = styled.div`
+    font-size: 30px;
+    font-weight: 800;
+    @media (max-width : 700px){
+        font-size: 20px;
+        padding-top: 8px;
+    }
+    @media (max-width: 500px){
+        display: none;
+    }
+`;
+
 

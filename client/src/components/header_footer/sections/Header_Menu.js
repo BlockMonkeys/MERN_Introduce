@@ -1,54 +1,48 @@
-import React, { useEffect } from 'react';
-import Button from '@material-ui/core/Button';
-import Menu from '@material-ui/core/Menu';
-import MenuIcon from '@material-ui/icons/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
+import React from 'react'
+import { Menu, Dropdown } from 'antd';
+import { MenuOutlined } from '@ant-design/icons';
 import { useHistory } from "react-router-dom";
 
-export default function MenuPopupState(props) {
+function Header_Menu() {
   const history = useHistory();
 
-  return (
-    <PopupState variant="popover" popupId="demo-popup-menu">
-      {(popupState) => (
-        <React.Fragment>
-          <Button variant="contained" color="primary" {...bindTrigger(popupState)}>
-            <MenuIcon />
-          </Button>
-          <Menu {...bindMenu(popupState)}>
-            <MenuItem onClick={()=> {
-              history.push("/introduce")
-              popupState.close()
-              }}>Introduce</MenuItem>
+  const menu = (
+    <Menu>
+      <Menu.Item onClick={()=>{
+        history.push("/introduce");
+      }}>Introduce</Menu.Item>
 
-            <MenuItem onClick={()=> {
-              history.push("/projects")
-              popupState.close()
-              }}>Projects</MenuItem>
+      <Menu.Item onClick={()=>{
+        history.push("/projects");
+      }}>Projects</Menu.Item>
 
-            <MenuItem onClick={()=> {
-              history.push("/contact")
-              popupState.close()
-              }}>Contact</MenuItem>   
+      <Menu.Item onClick={()=>{
+        history.push("/contact");
+      }}>Contact</Menu.Item>
 
-            <MenuItem onClick={()=> {
-              window.open("https://blockmonkeys.tistory.com/", '_blank');
-              popupState.close()
-              }}>Blog</MenuItem>
+      <Menu.Item onClick={()=>{
+        window.open("https://blockmonkeys.tistory.com/", '_blank');
+      }}>Blog</Menu.Item>
 
-            <MenuItem onClick={()=> {
-              window.open("https://github.com/BlockMonkeys/", '_blank');
-              popupState.close()
-              }}>Github</MenuItem>
+      <Menu.Item onClick={()=>{
+        window.open("https://github.com/BlockMonkeys/", '_blank');
+      }}>Github</Menu.Item>
 
-            <MenuItem onClick={()=> {
-              window.alert("준비중입니다 😅")
-              popupState.close()
-              }}>Resume</MenuItem>
-          </Menu>
-        </React.Fragment>
-      )}
-    </PopupState>
+      <Menu.Item onClick={()=>{
+        window.alert("준비중입니다 😅");
+      }}>Resume</Menu.Item>
+    </Menu>
   );
+
+  return (
+    <div>
+      <Dropdown overlay={menu}>
+        <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+          <MenuOutlined style={{ color: "black", fontSize: "22px", marginTop: "14px"}}/>
+        </a>
+      </Dropdown>
+    </div>
+  )
 }
+
+export default Header_Menu;
