@@ -30,3 +30,8 @@
   display: flex;
   justify-content: center;
 }
+
+.custom-card {
+  width: 100px;
+  height: 35px;
+}

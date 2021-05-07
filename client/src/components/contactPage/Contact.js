@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Axios from "axios";
+import { Row, Col } from "antd";
 
 
 
@@ -38,6 +39,10 @@ function Contact() {
             });
     };
 
+    const openChatHandler = () => {
+        window.open("https://open.kakao.com/o/snhmcI5c", "_blank");
+    }
+
     const handleCustomer = (e) => {
         e.preventDefault();
         setCustomer(e.target.value);
@@ -50,15 +55,17 @@ function Contact() {
     return (
         <ContactComponent>
             
-            <div>
-            <h1>📧 Email To BlockMonkey 📧</h1>
+            <Row gutter={[24, 24]}>
+
+            <Col lg={12} sm={24}>
+                <div>
                 <EmailContainer 
-                onSubmit={submitMailHandler}
-                action="http://localhost:5000/mail"
-                method="POST"
-                className={classes.root} 
-                noValidate autoComplete="off">
-                    
+                    onSubmit={submitMailHandler}
+                    action="http://localhost:5000/mail"
+                    method="POST"
+                    className={classes.root} 
+                    noValidate autoComplete="off">
+                    <h1 style={{ textAlign: "center"}}>📧 Email To BlockMonkey 📧</h1>
                     <TextField 
                         value={Customer}
                         onChange={handleCustomer}
@@ -77,7 +84,7 @@ function Contact() {
                     <Button
                         onClick={submitMailHandler}
                         variant="contained"
-                        color="primary"
+                        Color="primary"
                         className={classes.button}
                     >
                         Send
@@ -85,12 +92,22 @@ function Contact() {
                     
                 </EmailContainer>
                 </div>
-            <KakaoContainer>
-                <h1>📱 KaKao Open Chat 📱</h1>
-                <QrImg src="http://localhost:5000/static/kakao.png" alt="QR CODE" />
-                <KakaoAccess href="https://open.kakao.com/o/snhmcI5c" target="_blank">Participate in the OpenChat</KakaoAccess>
-                <div style={{fontSize: "20px", fontWeight: "600", fontStyle: "italic", backgroundColor: "black"}}>PASSWORD : 2021</div>
-            </KakaoContainer>
+                </Col>
+                <Col lg={12} sm={24}>
+                    <KakaoContainer>
+                        <h1>📱 KaKao Open Chat 📱</h1>
+                        <QrImg src="http://localhost:5000/static/kakao.png" alt="QR CODE" />
+                        <Button
+                        onClick={openChatHandler}
+                        variant="contained"
+                        Color="primary"
+                        className={classes.button}
+                        >
+                            Participate in the OpenChat
+                        </Button>
+                    </KakaoContainer>
+                </Col>
+            </Row>
         </ContactComponent>
     )
 }
@@ -119,22 +136,7 @@ const KakaoContainer = styled.div`
     align-items: center;
 `;
 
-const KakaoAccess = styled.a`
-    border: 1px solid yellow;
-    background-color: yellow;
-    text-decoration: none;
-    color: black;
-    padding: 5px;
-    font-weight: 700;
-    box-shadow: 1px 1px 1px 1px gray;
-    margin-bottom: 15px;
-    :hover{
-        box-shadow: 1px 1px 1px 1px gray inset;
-        color: red;
-    }
-`;
-
 const QrImg = styled.img`
-    width: 160px;
-    height: 160px;
+    width: 275px;
+    height: 275px;
 `;

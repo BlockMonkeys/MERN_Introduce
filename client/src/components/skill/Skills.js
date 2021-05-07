@@ -19,9 +19,7 @@ function Skills(props) {
                             <Badges src='http://localhost:5000/static/express.png' style={{width:"55px", height:"25px"}}/>
                             <Badges src='http://localhost:5000/static/pug.png' style={{width:"25px", height:"25px"}}/>
                             <Badges src='http://localhost:5000/static/react.png' style={{width:"25px", height:"25px"}}/>
-                            <Badges src='http://localhost:5000/static/redux.png' style={{width:"30px", height:"25px"}}/>
                             <br />
-                            <Badges src='http://localhost:5000/static/antd.png' style={{width:"35px", height:"25px"}}/>
                         </DividedBadgeContainer>
                     </Col>
 

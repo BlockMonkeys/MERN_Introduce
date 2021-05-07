@@ -47,7 +47,8 @@ const HeaderTitle = styled.div`
         padding-top: 8px;
     }
     @media (max-width: 500px){
-        display: none;
+        font-size: 12px;
+        padding-top: 17px;
     }
 `;
 
