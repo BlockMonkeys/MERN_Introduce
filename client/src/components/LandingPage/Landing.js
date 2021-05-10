@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
-import Carousel from "./utils/Carousel";
+import Carousel from "./sections/Carousel";
+import Skills from "./sections/Skills";
 import styled from "styled-components";
-import Skills from "./skill/Skills";
+
 
 
 function Home(props) {

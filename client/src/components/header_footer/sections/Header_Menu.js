@@ -31,6 +31,10 @@ function Header_Menu() {
       <Menu.Item onClick={()=>{
         window.alert("준비중입니다 😅");
       }}>Resume</Menu.Item>
+
+      <Menu.Item onClick={()=>{
+        window.alert("준비중입니다 😅");
+      }}>Ninja Coders</Menu.Item>
     </Menu>
   );
 

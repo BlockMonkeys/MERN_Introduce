@@ -55,10 +55,9 @@ function Contact() {
     return (
         <ContactComponent>
             
-            <Row gutter={[24, 24]}>
+            <Row gutter={[24, 24]} style={{ display: "flex", justifyContent: "center"}}>
 
-            <Col lg={12} sm={24}>
-                <div>
+            <Col lg={8} sm={24}>
                 <EmailContainer 
                     onSubmit={submitMailHandler}
                     action="http://localhost:5000/mail"
@@ -91,9 +90,13 @@ function Contact() {
                     </Button>    
                     
                 </EmailContainer>
-                </div>
                 </Col>
-                <Col lg={12} sm={24}>
+
+                <Col lg={8} sm={24}>
+                    <OR>OR YOU CAN CONTACT</OR>
+                </Col>
+                
+                <Col lg={8} sm={24}>
                     <KakaoContainer>
                         <h1>📱 KaKao Open Chat 📱</h1>
                         <QrImg src="http://localhost:5000/static/kakao.png" alt="QR CODE" />
@@ -119,7 +122,10 @@ const ContactComponent = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 60px;
+    margin: 100px 0;
+    @media (max-width: 990px){
+        margin: 30px 0;
+    }
 `;
 
 const EmailContainer = styled.form`
@@ -134,9 +140,19 @@ const KakaoContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 990px){
+        margin-bottom: 45px;
+    }
 `;
 
 const QrImg = styled.img`
     width: 275px;
     height: 275px;
+`;
+
+const OR = styled.div`
+    font-size: 30px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
 `;

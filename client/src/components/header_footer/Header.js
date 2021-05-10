@@ -11,9 +11,8 @@ function Header(props) {
     return (
         <HeaderComponent>
             <LogoBox onClick={()=> history.push("/")}>
-                <img src={`http://localhost:5000/static/blockmonkey.jpeg`} 
-                alt={`Logo Image`} 
-                style={{width: "50px", height: "50px", border: "1px solid lightgray", borderRadius:"25px"}}/>
+                <Logo src={`http://localhost:5000/static/blockmonkey.jpeg`} 
+                alt={`Logo Image`} />
             </LogoBox>
 
             <HeaderTitle>Welcome To BlockMonkey's Website 👋🏼</HeaderTitle>
@@ -39,6 +38,18 @@ const LogoBox = styled.div`
     }
 `;
 
+const Logo = styled.img`
+    width: 50px;
+    height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    @media (max-width: 320px){
+        width: 35px;
+        height: 35px;
+        margin-top: 5px;
+    }
+`;
+
 const HeaderTitle = styled.div`
     font-size: 30px;
     font-weight: 800;
@@ -49,6 +60,9 @@ const HeaderTitle = styled.div`
     @media (max-width: 500px){
         font-size: 12px;
         padding-top: 17px;
+    }
+    @media (max-width: 320px){
+        display: none;
     }
 `;
 

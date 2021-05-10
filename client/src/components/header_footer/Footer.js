@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Footer(props) {
     return (
         <React.Fragment>
-            <FooterText>Thank you for visiting my Introduce Page the page is made of React ﹠ Node</FooterText>
+            <FooterText>Thank You For visit My Website. blockmonkey@naver.com</FooterText>
         </React.Fragment>
     )
 }

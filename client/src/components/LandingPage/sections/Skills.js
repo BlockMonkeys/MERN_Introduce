@@ -5,10 +5,10 @@ import {Row, Col} from "antd";
 function Skills(props) {
     return (
         <div>
-            <Title><u>My Skills</u></Title>
-                <Row gutter={[24, 24]} style={{ display: "flex", justifyContent:"center"}}>
+            <Title>My Skills</Title>
+                <Row gutter={[24, 24]} style={{ display: "flex", justifyContent:"center", margin: "0 0"}}>
 
-                    <Col lg={6} md={12} sm={24}>
+                    <Col lg={5} md={12} sm={24}>
                         <DividedBadgeContainer>
                             <h2>Language﹠Framework</h2>
                             <Badges src='http://localhost:5000/static/html5.png' style={{width:"25px", height:"25px"}}/>
@@ -23,7 +23,7 @@ function Skills(props) {
                         </DividedBadgeContainer>
                     </Col>
 
-                    <Col lg={6} md={12} sm={24}>
+                    <Col lg={5} md={12} sm={24}>
                         <DividedBadgeContainer>
                             <h2>Database</h2>
                             <Badges src='http://localhost:5000/static/mongodb.png' style={{width:"55px", height:"25px"}}/>
@@ -31,7 +31,7 @@ function Skills(props) {
                         </DividedBadgeContainer>
                     </Col>
 
-                    <Col lg={6} md={12} sm={24}>
+                    <Col lg={5} md={12} sm={24}>
                         <DividedBadgeContainer>
                             <h2>Infrastructure</h2>
                             <Badges src='http://localhost:5000/static/git.png' style={{width:"25px", height:"25px"}}/>
@@ -40,7 +40,7 @@ function Skills(props) {
                         </DividedBadgeContainer>
                     </Col>
 
-                    <Col lg={6} md={12} sm={24}>
+                    <Col lg={5} md={12} sm={24}>
                         <DividedBadgeContainer>
                             <h2>Others</h2>
                             <Badges src='http://localhost:5000/static/toeic.jpg' style={{width:"25px", height:"25px"}}/>
@@ -57,6 +57,7 @@ export default Skills;
 const Title = styled.div`
     font-size: 25px;
     font-weight: 800;
+    text-decoration: underline;
     margin : 15px 0;
     text-align: center;
 `;
