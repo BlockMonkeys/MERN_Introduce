@@ -6,7 +6,7 @@ function Skills(props) {
     return (
         <div>
             <Title>My Skills</Title>
-                <Row gutter={[24, 24]} style={{ display: "flex", justifyContent:"center", margin: "0 0"}}>
+                <Row gutter={[24, 24]} style={{ display: "flex", justifyContent:"center"}}>
 
                     <Col lg={5} md={12} sm={24}>
                         <DividedBadgeContainer>

@@ -1,13 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import Menu from "./sections/Header_Menu";
 
 function Header(props) {
     const history = useHistory();
-    useEffect(() => {
-        console.log(history);
-    }, [])
+
     return (
         <HeaderComponent>
             <LogoBox onClick={()=> history.push("/")}>

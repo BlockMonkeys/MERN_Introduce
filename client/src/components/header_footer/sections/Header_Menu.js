@@ -41,8 +41,8 @@ function Header_Menu() {
   return (
     <div>
       <Dropdown overlay={menu}>
-        <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
-          <MenuOutlined style={{ color: "black", fontSize: "22px", marginTop: "14px"}}/>
+        <a href="#!" className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+          <MenuOutlined style={{ color: "black", fontSize: "22px", marginTop: "14px" }}/>
         </a>
       </Dropdown>
     </div>

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import styled from "styled-components";
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
@@ -21,10 +21,11 @@ function Contact() {
     const [Customer, setCustomer] = useState("");
     const [Description, setDescription] = useState("");
     const classes = useStyles();
+
     const mailingData = {
         from : Customer,
         description : Description,
-    }
+    };
 
     const submitMailHandler = () => {
         Axios.post("/api/mail", mailingData)

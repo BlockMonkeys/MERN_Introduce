@@ -6,15 +6,9 @@ function Certificate() {
         <CertificateComponent>
             <h1>Certificated</h1>
             <CertificateBox>
-                <h3>DEFAULT </h3>
+                <h3>Comming Soon.... </h3>
                 <CertificatedImg src="http://localhost:5000/static/default.png" alt="TOEIC" />
             </CertificateBox>
-
-            <CertificateBox>
-                <h3>DEFAULT</h3>
-                <CertificatedImg src="http://localhost:5000/static/default.png" alt="AWS" />
-            </CertificateBox>
-
         </CertificateComponent>
     )
 }
