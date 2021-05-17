@@ -6,8 +6,7 @@ function Certificate() {
         <CertificateComponent>
             <h1>Certificated</h1>
             <CertificateBox>
-                <h3>Comming Soon.... </h3>
-                <CertificatedImg src="http://localhost:5000/static/default.png" alt="TOEIC" />
+                <h3>Update Soon.... </h3>
             </CertificateBox>
         </CertificateComponent>
     )

@@ -5,9 +5,6 @@ const nodeMail = (req, res)=> {
     const from = req.body.from;
     const description = req.body.description;
     const date = new Date;
-
-    console.log(req.body);
-
     const transporter = nodemailer.createTransport({
         service: "gmail",
         host: "smtp.gmail.com",

@@ -28,9 +28,6 @@ class App extends React.Component{
           <Route path="/contact" component={Contact} />
         </Switch>
 
-        <FooterComponent>
-          <Footer />
-        </FooterComponent>
       </div>
     )
   }
@@ -46,13 +43,4 @@ const HeaderComponent = styled.div`
 `;
 
 
-const FooterComponent = styled.div`
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: gray;
-    opacity: 0.2;
-    z-index: 10;
-`;
 

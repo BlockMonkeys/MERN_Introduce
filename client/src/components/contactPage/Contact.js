@@ -100,7 +100,7 @@ function Contact() {
                 <Col lg={8} sm={24}>
                     <KakaoContainer>
                         <h1>📱 KaKao Open Chat 📱</h1>
-                        <QrImg src="http://localhost:5000/static/kakao.png" alt="QR CODE" />
+                        <QrImg src="https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/kakao.png" alt="QR CODE" />
                         <Button
                         onClick={openChatHandler}
                         variant="contained"

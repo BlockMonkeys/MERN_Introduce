@@ -9,7 +9,7 @@ function Header(props) {
     return (
         <HeaderComponent>
             <LogoBox onClick={()=> history.push("/")}>
-                <Logo src={`http://localhost:5000/static/blockmonkey.jpeg`} 
+                <Logo src={`https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/blockmonkeylogo.jpeg`} 
                 alt={`Logo Image`} />
             </LogoBox>
 

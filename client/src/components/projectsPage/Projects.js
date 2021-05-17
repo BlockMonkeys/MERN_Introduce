@@ -21,7 +21,7 @@ function Projects(props) {
                             title="Introduce App"
                             description="[개인] 소개페이지 Using, React ﹠ Node"
                             githubLink="https://github.com/BlockMonkeys/React_Introduce" 
-                            cardImg="http://localhost:5000/static/introProject.png"
+                            cardImg="https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/introProject.png"
                             goHomeFunc={MyIntroduceAppFunc}
                         />
                     </Col>
@@ -30,7 +30,7 @@ function Projects(props) {
                             title="Team Blog App"
                             description="[NinjaCoders] 팀 블로그 페이지 Using, MERN"
                             githubLink="https://github.com/BlockMonkeys/Team_TeamBlog" 
-                            cardImg="http://localhost:5000/static/ninjaCoders.png"
+                            cardImg="https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/ninjaCoders.png"
                         />
                     </Col>
                     <Col xl={6} lg={8} md={12} sm={24}>
@@ -38,7 +38,7 @@ function Projects(props) {
                             title="Coin Community App"
                             description="[NinjaCoders] 코인 커뮤니티 사이트 제작 예정... Using, MERN"
                             githubLink
-                            cardImg="http://localhost:5000/static/blockmonkey.jpeg"
+                            cardImg="https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/blockmonkeylogo.jpeg"
                         />
                     </Col>
                     <Col xl={6} lg={8} md={12} sm={24}>
@@ -46,7 +46,7 @@ function Projects(props) {
                             title="Default"
                             description="Default"
                             githubLink
-                            cardImg="http://localhost:5000/static/blockmonkey.jpeg"
+                            cardImg="https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/blockmonkeylogo.jpeg"
                         />
                     </Col>
                 </Row>

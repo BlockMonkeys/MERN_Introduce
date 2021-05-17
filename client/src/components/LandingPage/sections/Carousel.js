@@ -7,19 +7,19 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const tutorialSteps = [
   {
-    label: 'Introduce Banner',
+    label: 'My Introduce Banner',
     imgPath:
-      'http://localhost:5000/static/banner.png',
+      'https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/mybanner.png',
   },
   {
-    label: 'Bird',
+    label: 'My Pictrue 1',
     imgPath:
-      'http://localhost:5000/static/my1.JPG',
+      'https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/mybanner.png',
   },
   {
-    label: 'Bali, Indonesia',
+    label: 'My Picture 2',
     imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
+      'https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/mybanner.png',
   },
 ];
 

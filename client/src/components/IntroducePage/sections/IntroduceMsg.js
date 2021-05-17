@@ -11,9 +11,9 @@ function IntroduceMsg() {
             Currently, enrolled in a master's degree at Kookmin University department of BlockChain. 🎓 <br />
             Meanwhile, I like to develop Web Application myself. <br />
             So, nomally I study about the Web Development using MERN STACK.<br />
-            And I teamed up called "ninja coders" my team is learning about Web Development ﹠ Design. Since 2021.03~ <br />  
+            And I teamed up called "Ninja coders" my team is learning about Web Development. Since 2021.03~ <br />  
             My hobby is watch Movies and also I love to play game. 😂<br />
-            And I have "ISTJ" MBTI type! Thank You !🙇🏻‍♂️
+            Thank You !🙇🏻‍♂️
         </IntroduceMsgComponent>
     )
 }
