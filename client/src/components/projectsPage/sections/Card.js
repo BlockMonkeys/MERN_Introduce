@@ -14,7 +14,7 @@ function CardComponent(props) {
           actions={[
             <HomeOutlined onClick={props.goHomeFunc}/>,
             <GithubOutlined onClick={()=> window.open(props.githubLink, "_blank")}/>,
-            <ReadOutlined />
+            <ReadOutlined onClick={()=> window.open(props.docLink, "_blank")}/>
           ]}
         >
           <Meta title={props.title} description={props.description} />
