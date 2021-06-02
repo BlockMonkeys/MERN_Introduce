@@ -65,7 +65,7 @@ function Contact() {
                     method="POST"
                     className={classes.root} 
                     noValidate autoComplete="off">
-                    <h1 style={{ textAlign: "center"}}>📧 Email To BlockMonkey 📧</h1>
+                    <h1 style={{ textAlign: "center", fontFamily:"Lobster, cursive"}}>📧 Email To BlockMonkey 📧</h1>
                     <TextField 
                         value={Customer}
                         onChange={handleCustomer}
@@ -99,8 +99,8 @@ function Contact() {
                 
                 <Col lg={8} sm={24}>
                     <KakaoContainer>
-                        <h1>📱 KaKao Open Chat 📱</h1>
-                        <QrImg src="https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/kakao.png" alt="QR CODE" />
+                        <h1 style={{fontFamily:"Lobster, cursive"}}>📱 KaKao Open Chat 📱</h1>
+                        <QrImg src="https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/kakaoQR.PNG" alt="QR CODE" />
                         <Button
                         onClick={openChatHandler}
                         variant="contained"
@@ -156,4 +156,5 @@ const OR = styled.div`
     font-weight: 800;
     display: flex;
     align-items: center;
+    font-family: "Lobster", cursive;
 `;

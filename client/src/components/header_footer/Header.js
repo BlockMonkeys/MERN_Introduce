@@ -51,6 +51,7 @@ const Logo = styled.img`
 const HeaderTitle = styled.div`
     font-size: 30px;
     font-weight: 800;
+    font-family: "Lobster", cursive;
     @media (max-width : 700px){
         font-size: 20px;
         padding-top: 8px;

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
+import { Button } from "antd";
 
 function IntroduceMsg() {
     return (
@@ -14,6 +15,7 @@ function IntroduceMsg() {
             And I teamed up called "Ninja coders" my team is learning about Web Development. Since 2021.03~ <br />  
             My hobby is watch Movies and also I love to play game. 😂<br />
             Thank You !🙇🏻‍♂️
+            <Button type="danger" style={{ width: "50%", alignSelf: "center"}}>더 자세한 소개 글(자기소개서)</Button>
         </IntroduceMsgComponent>
     )
 }

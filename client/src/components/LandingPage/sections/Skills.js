@@ -5,6 +5,19 @@ import {Row, Col} from "antd";
 function Skills(props) {
     return (
         <div>
+
+            {/* 주스킬 */}
+            <Title>Main Skills</Title>
+                <Row gutter={[24, 24]} style={{ display: "flex", justifyContent:"center", marginBottom: "45px"}}>
+                    <Col>
+                        <Badges src='https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/mongodb.png' style={{width:"55px", height:"25px"}}/>
+                        <Badges src='https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/express.png' style={{width:"55px", height:"25px"}}/>
+                        <Badges src='https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/react.png' style={{width:"25px", height:"25px"}}/>
+                        <Badges src='https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/nodejs.png' style={{width:"25px", height:"25px"}}/>
+                    </Col>
+                </Row>
+
+            {/* 다루어본 스킬 */}
             <Title>My Skills</Title>
                 <Row gutter={[24, 24]} style={{ display: "flex", justifyContent:"center"}}>
 
@@ -44,6 +57,7 @@ function Skills(props) {
                         <DividedBadgeContainer>
                             <h2>Others</h2>
                             <Badges src='https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/toeic.jpg' style={{width:"25px", height:"25px"}}/>
+                            <Badges src='https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/docker.png' style={{width:"25px", height:"25px"}}/>
                         </DividedBadgeContainer>
                     </Col>
                 </Row>
@@ -57,9 +71,9 @@ export default Skills;
 const Title = styled.div`
     font-size: 25px;
     font-weight: 800;
-    text-decoration: underline;
     margin : 15px 0;
     text-align: center;
+    font-family: "Lobster", cursive;
 `;
 
 const DividedBadgeContainer = styled.div`
