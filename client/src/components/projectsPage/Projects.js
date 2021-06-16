@@ -69,6 +69,6 @@ const ProjectComponent = styled.div`
 const SubTitle = styled.h2`
     font-size: 25px;
     font-weight: 800;
-    text-decoration: underline;
     margin: 25px;
+    font-family: "Lobster", cursive;
 `;
