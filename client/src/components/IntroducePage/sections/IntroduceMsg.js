@@ -3,6 +3,9 @@ import styled from "styled-components";
 import { Button } from "antd";
 
 function IntroduceMsg() {
+    const openNotionResume = () => {
+        window.open("https://www.notion.so/fabeb9396c634418baebb5fec23d1557", '_blank');
+    }
     return (
         <IntroduceMsgComponent>
             <h1>Introduce Msg 👨🏻‍💻</h1>
@@ -15,7 +18,13 @@ function IntroduceMsg() {
             And I teamed up called "Ninja coders" my team is learning about Web Development. Since 2021.03~ <br />  
             My hobby is watch Movies and also I love to play game. 😂<br />
             Thank You !🙇🏻‍♂️
-            <Button type="danger" style={{ width: "50%", alignSelf: "center"}}>더 자세한 소개 글(자기소개서)</Button>
+            <Button 
+                type="danger" 
+                style={{ width: "50%", alignSelf: "center"}}
+                onClick={openNotionResume}
+                >
+            더 자세한 소개 글(자기소개서)
+            </Button>
         </IntroduceMsgComponent>
     )
 }

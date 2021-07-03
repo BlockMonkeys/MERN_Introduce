@@ -29,7 +29,7 @@ function Header_Menu() {
       }}>Github</Menu.Item>
 
       <Menu.Item onClick={()=>{
-        window.alert("준비중입니다 😅");
+        window.open("https://www.notion.so/fabeb9396c634418baebb5fec23d1557", '_blank');
       }}>Resume</Menu.Item>
 
       <Menu.Item onClick={()=>{

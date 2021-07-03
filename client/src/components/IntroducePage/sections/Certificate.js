@@ -4,9 +4,9 @@ import styled from "styled-components";
 function Certificate() {
     return (
         <CertificateComponent>
-            <h1>Certificated</h1>
+            <h1>Certificated 📋</h1>
             <CertificateBox>
-                <h3>Update Soon.... </h3>
+                <h3>📖 TOEIC - 705 </h3>
             </CertificateBox>
         </CertificateComponent>
     )
