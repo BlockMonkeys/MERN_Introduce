@@ -9,17 +9,17 @@ const tutorialSteps = [
   {
     label: 'My Introduce Banner',
     imgPath:
-      'https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/mybanner.png',
+      'https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/banner.png',
   },
   {
     label: 'My Pictrue 1',
     imgPath:
-      'https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/mybanner.png',
+      'https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/pic1.png',
   },
   {
     label: 'My Picture 2',
     imgPath:
-      'https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/mybanner.png',
+      'https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/pic2.png',
   },
 ];
 

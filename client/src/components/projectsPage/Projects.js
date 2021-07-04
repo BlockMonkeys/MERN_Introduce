@@ -9,8 +9,12 @@ function Projects(props) {
         alert("미배포 앱입니다.");
     };
     const myIntroduceAppLink = () => {
-        alert("미배포 앱입니다.");
+        window.open("http://13.125.218.44/", '_blank');
     };
+    const teamblogProjectAppLink = () => {
+        window.open("http://13.125.230.121/", '_blank');
+    };
+
     return (
         <ProjectComponent>
             <SubTitle> Projects </SubTitle>
@@ -46,6 +50,7 @@ function Projects(props) {
                             description="[NinjaCoders] 팀 블로그 페이지 Using, MERN"
                             githubLink="https://github.com/BlockMonkeys/Team_TeamBlog" 
                             cardImg="https://blockmonkeys-images.s3.ap-northeast-2.amazonaws.com/ninjaCoders.png"
+                            goHomeFunc={teamblogProjectAppLink}
                         />
                     </Col>
                 </Row>

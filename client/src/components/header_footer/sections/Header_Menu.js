@@ -33,7 +33,7 @@ function Header_Menu() {
       }}>Resume</Menu.Item>
 
       <Menu.Item onClick={()=>{
-        window.alert("준비중입니다 😅");
+        window.open("http://13.125.230.121/", '_blank');
       }}>Ninja Coders</Menu.Item>
     </Menu>
   );

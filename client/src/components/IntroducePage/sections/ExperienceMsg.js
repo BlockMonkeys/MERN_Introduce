@@ -36,11 +36,6 @@ function ExperienceMsg() {
                 <SchoolContent>🎓 컴퓨터시스템1 : 컴퓨터구조, 운영체제, 네트워크, 데이터베이스 등 전반적인 컴퓨터사이언스의 기본적인 내용들을 학습함</SchoolContent>
                 <SchoolContent>🎓 클라우드컴퓨팅 : EC2, VPC, Storage, RDB, 클라우드 아키텍쳐 등 전반적인 아마존웹서비스(AWS)의 내용을 학습함</SchoolContent>
             </ContentDividedBlock>
-
-            <ContentDividedBlock>
-                <Date>2021년 3,4분기</Date>
-                <SelfStudyContent>✍🏼 BlockChain Dapp 구축 공부 예정... </SelfStudyContent>
-            </ContentDividedBlock>
         </ExperienceMsgComponent>
 
     )
